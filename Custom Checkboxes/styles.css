@@ -1,0 +1,47 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3498db;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: #3498db;
+}
+
+/* Optional: Style to indicate hover effect */
+label:hover:before {
+  background-color: #ecf0f1;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Follower Count: <span id="followerCount">0</span></h1>
+        <button onclick="increaseFollowers()">Follow</button>
+    </div>
+
+    <script>
+        let followerCount = 0;
+
+        function increaseFollowers() {
+            followerCount++;
+            document.getElementById("followerCount").innerText = followerCount;
+        }
+    </script>
+</body>
+</html>

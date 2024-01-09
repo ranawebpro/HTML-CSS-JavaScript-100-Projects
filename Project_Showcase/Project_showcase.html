@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .product-showcase {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .product-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .product-details {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .product-description {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .product-features {
+      list-style: none;
+      padding: 0;
+    }
+
+    .product-features li {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .product-showcase {
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Product Showcase :)</h1>
+  </header>
+
+  <div class="product-showcase">
+    <img class="product-image" src="your-product-image.jpg" alt="Product Image">
+    <div class="product-details">
+      <h2 class="product-title">Product Name</h2>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <ul class="product-features">
+        <li>Feature 1: Lorem ipsum</li>
+        <li>Feature 2: Dolor sit amet</li>
+        <li>Feature 3: Consectetur adipiscing elit</li>
+        <li>Feature 4: Sed do eiusmod</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
+ 

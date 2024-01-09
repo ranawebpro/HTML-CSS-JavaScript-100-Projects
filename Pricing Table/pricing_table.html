@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .pricing-table {
+      display: flex;
+      max-width: 800px;
+      margin: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .pricing-column {
+      flex: 1;
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .pricing-column:hover {
+      transform: scale(1.05);
+    }
+
+    .pricing-header {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .price {
+      font-size: 36px;
+      margin-top: 20px;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .feature-list li {
+      margin-bottom: 10px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pricing-table">
+    <div class="pricing-column">
+      <div class="pricing-header">Basic</div>
+      <div class="price">$19.99/month</div>
+      <ul class="feature-list">
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+      </ul>
+      <a href="#" class="cta-button">Sign Up</a>
+    </div>
+
+    <div class="pricing-column">
+      <div class="pricing-header">Standard</div>
+      <div class="price">$39.99/month</div>
+      <ul class="feature-list">
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+        <li>Feature 4</li>
+      </ul>
+      <a href="#" class="cta-button">Sign Up</a>
+    </div>
+
+    <div class="pricing-column">
+      <div class="pricing-header">Premium</div>
+      <div class="price">$59.99/month</div>
+      <ul class="feature-list">
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+        <li>Feature 4</li>
+        <li>Feature 5</li>
+      </ul>
+      <a href="#" class="cta-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+</html>
